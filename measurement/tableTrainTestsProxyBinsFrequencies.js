@@ -41,7 +41,7 @@ for(var f = 0; f < freqs.length; f++) {
     avgNaive /= runsInner;
     avgApproach /= runs;
     var naiveMultiplier = 10 / freqs[f];
-    console.log((freqs[f] - 500) / 1000 + " " + naiveMultiplier * avgNaive * 1000 + " " + avgApproach + " " + (avgApproach / (naiveMultiplier * avgNaive) / 1000));
+    console.log((freqs[f] - 500) / 1000 + 1 + " " + naiveMultiplier * avgNaive * 1000 + " " + avgApproach + " " + (avgApproach / (naiveMultiplier * avgNaive) / 1000));
 }
 
 function range(start, edge, step) {

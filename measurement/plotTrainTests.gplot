@@ -10,7 +10,7 @@ set style line 5 lc rgb "#5c2b56"
 #set auto y
 set xrange[0:7]
 set yrange[0:100000]
-#set yrange[0:5000]
+set yrange[0:2500]
 set grid y
 set terminal png font "Verdana" 10
 set ylabel "Execution time (ms)"

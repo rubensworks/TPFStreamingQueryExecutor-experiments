@@ -9,8 +9,11 @@ set style fill solid border -1
 #set auto x
 #set auto y
 #set xrange [0:10000]
-set yrange [0:90000]
+#set yrange [0:90000]
+#set yrange [0:90000]
+set yrange [0:160000]
 set xrange [0:50]
+unset key
 
 set x2range [0:1000]
 set xtics out nomirror
