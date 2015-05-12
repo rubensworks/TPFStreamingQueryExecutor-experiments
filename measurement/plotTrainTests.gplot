@@ -12,7 +12,7 @@ set xrange[0:7]
 set yrange[0:100000]
 set yrange[0:2500]
 set grid y
-set terminal png font "Verdana" 10
+set terminal png font "Verdana" 16
 set ylabel "Execution time (ms)"
 set xlabel "Execution nr"
 

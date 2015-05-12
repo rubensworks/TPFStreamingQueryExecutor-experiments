@@ -22,7 +22,7 @@ set x2tics axis
 unset x2tics
 
 set grid y
-set terminal png font "Verdana" 10
+set terminal png font "Verdana" 16
 set ylabel "Total bandwidth (Bytes)"
 set xlabel "Time (s)"
 

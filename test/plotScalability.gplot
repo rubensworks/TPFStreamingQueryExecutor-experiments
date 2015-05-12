@@ -6,10 +6,11 @@ set style line 3 lc rgb "#677B82" linewidth 2
 
 set auto x
 #set auto y
-set yrange[-10:150]
-set terminal png font "Verdana" 10
+set yrange[-10:170]
+set terminal png font "Verdana" 16
 set ylabel "Average CPU%"
 set xlabel "Concurrent Clients"
+set xtics rotate by -90
 
 f(x) = a*x + b
 fit f(x) '.scalability.data' using 1:2 via a,b

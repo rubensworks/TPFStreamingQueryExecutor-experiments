@@ -1,14 +1,14 @@
 # Plot the execution times.
 
-set style line 1 lc rgb "#D65153"
-set style line 2 lc rgb "#FACFA5"
+set style line 1 lc rgb "#D65153" linewidth 2
+set style line 2 lc rgb "#FACFA5" linewidth 2
 set style line 3 lc rgb "#677B82" linewidth 2
 
 set auto x
 #set auto y
 set yrange[-10:100]
 set xtics 10
-set terminal png font "Verdana" 10
+set terminal png font "Verdana" 16
 set ylabel "Average CPU%"
 set xlabel "Time (s)"
 

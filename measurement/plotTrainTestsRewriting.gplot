@@ -14,8 +14,8 @@ set style fill solid border -1
 set auto x
 set auto y
 set grid y
-set yrange [0:3500]
-set terminal png font "Verdana" 10
+set yrange [0:3850]
+set terminal png font "Verdana" 16 size 1000,480
 set ylabel "Execution time (ms)"
 
 plot 'output/.train.data' using 2:xtic(1) title col ls 1 fillstyle pattern 1, \
