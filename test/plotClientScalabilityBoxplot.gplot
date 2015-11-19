@@ -17,6 +17,6 @@ set border 2
 set xtics ("C-SPARQL" 1, "CQELS" 2, "Query Streamer" 3) scale 0.0
 set xtics nomirror
 set ytics nomirror
-set yrange [0:300]
+set yrange [0:100]
 
-plot '.scalability-100.data' using (1):1 title col ls 1, '' using (2):3 title col ls 3, '' using (3):2 title col ls 2
+plot '.clientscalability-bp.data' using (1):1 title col ls 1, '' using (2):3 title col ls 3, '' using (3):2 title col ls 2
