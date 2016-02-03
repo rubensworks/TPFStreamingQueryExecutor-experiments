@@ -1,0 +1,28 @@
+~~~ Dynamic:
+PREFIX tmp: <http://example.org/temporal#>
+PREFIX sp: <http://example.org/singletonproperties#>
+PREFIX t: <http://example.org/train#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?id0 ?platform ?stmt5 ?final0 ?delay ?stmt6 ?final1
+WHERE {
+  GRAPH ?stmt5 {
+    ?id0 t:platform ?platform.
+  }
+  ?stmt5 tmp:expiration ?final0.
+  GRAPH ?stmt6 {
+    ?id0 t:delay ?delay.
+  }
+  ?stmt6 tmp:expiration ?final1.
+}
+
+~~~ Static:
+PREFIX t: <http://example.org/train#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?id0 ?routeLabel ?headSign ?departureTime
+WHERE {
+  ?id0 t:routeLabel ?routeLabel.
+  ?id0 t:headSign ?headSign.
+  ?id0 t:departureTime ?departureTime.
+}
